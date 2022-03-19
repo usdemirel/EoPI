@@ -38,6 +38,16 @@ public class MultipleArbitraryPrecisionIntegersTest {
         test(expected, a, b);
     }
 
+    @Test
+    public void multiply4sd() {
+        expected = Arrays.asList(1,0,9,7,3,8,2,7,1,6,0,6,3,1,0);
+        a = Arrays.asList(1, 1, 1, 1, 1);
+        b = Arrays.asList(9,8,7,6,5,4,3,2,1,0);
+
+        test(expected, a, b);
+    }
+
+
     private void test(List<Integer> expected, List<Integer> a, List<Integer> b) {
         assertEquals(expected, MultipleArbitraryPrecisionIntegers.multiply(a,b));
     }
