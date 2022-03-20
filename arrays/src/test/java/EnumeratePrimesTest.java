@@ -26,6 +26,14 @@ public class EnumeratePrimesTest {
         test(primes, n);
     }
 
+    @Test
+    public void enumerateSerkan1() {
+        primes = Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97);
+        n = 100;
+
+        test(primes, n);
+    }
+
     void test(List<Integer> primes, int n) {
         assertEquals(primes, EnumeratePrimes.enumeratePrimes(n));
     }

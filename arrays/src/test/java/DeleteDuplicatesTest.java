@@ -38,6 +38,24 @@ public class DeleteDuplicatesTest {
         test(duplicates, noDuplicates, validElements);
     }
 
+    @Test
+    public void deleteDuplicatesSerkan1() {
+        duplicates = Arrays.asList(1, 2, 3, 4, 5);
+        noDuplicates = Arrays.asList(1, 2, 3, 4, 5);
+        validElements = 5;
+
+        test(duplicates, noDuplicates, validElements);
+    }
+
+    @Test
+    public void deleteDuplicatesSerkan2() {
+        duplicates = Arrays.asList(1, 2, 3, 4, 5,5);
+        noDuplicates = Arrays.asList(1, 2, 3, 4, 5,null);
+        validElements = 5;
+
+        test(duplicates, noDuplicates, validElements);
+    }
+
     private void test(List<Integer> duplicates, List<Integer> noDuplicates, int validElements) {
         assertEquals(validElements, DeleteDuplicates.deleteDuplicates(duplicates));
         assertEquals(noDuplicates, duplicates);

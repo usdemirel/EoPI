@@ -7,6 +7,7 @@ public class MultipleArbitraryPrecisionIntegers {
     /*
     6.3 I am not very happy with this solution but I at least was able to produce some result.
     TODO: Do this again later..
+    ExtraInfo:  new ArrayList<>(Collections.nCopies(size, valueToCopiedToAllOtherIndexes))
     */
 
     public static List<Integer> multiply(List<Integer> a, List<Integer> b) {
