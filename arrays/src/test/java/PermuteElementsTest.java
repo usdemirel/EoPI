@@ -32,7 +32,8 @@ public class PermuteElementsTest {
 
     @Test
     public void applyPermutation3() {
-        expected = Arrays.asList(150, 50, 100, 200);
+        expected = Arrays.asList(150, 50, 100, 200); //this seems faulty
+        expected = Arrays.asList(100, 150, 50, 200); // this is based on the book
         perm = Arrays.asList(2, 0, 1, 3);
         a = Arrays.asList(50, 100, 150, 200);
 

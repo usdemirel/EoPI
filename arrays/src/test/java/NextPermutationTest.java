@@ -34,6 +34,14 @@ public class NextPermutationTest {
         test(expected, input);
     }
 
+    @Test
+    public void nextPermutationSerkan() {
+        input = Arrays.asList(2,9,3,8,6,4,1);
+        expected = Arrays.asList(2,9,4,1,3,6,8);
+
+        test(expected, input);
+    }
+
     private void test(List<Integer> expected, List<Integer> input) {
         assertEquals(expected, NextPermutation.nextPermutation(input));
     }
